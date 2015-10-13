@@ -1,0 +1,9 @@
+
+.wrapper{
+	position: relative;
+    width: 100%;
+    left: 0;
+    background-color: #eef0ec;
+	@include clr();
+}
+
