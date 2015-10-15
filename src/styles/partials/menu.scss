@@ -1,20 +1,28 @@
-.open-menu{
-    left: 0!important;
+.wrapper .open-menu{
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 .nav {
     position: absolute;
     background: #d8d8d8;
-    width: 24.7%;
+    width: 480px;
     top: 0;
     bottom: 0;
-    left: -24.7%;
     z-index: 10;
-    -webkit-transition: left 1s ease-in-out;
-    -moz-transition: left 1s ease-in-out;
-    -ms-transition: left 1s ease-in-out;
-    -o-transition: left 1s ease-in-out;
-    transition: left 1s ease-in-out;
-    @include box-shadow(-5px,0, 5px,rgba(0,0,0,0.16),inset);
+    -moz-transform: translate3d(-480px, 0, 0);
+    -ms-transform: translate3d(-480px, 0, 0);
+    -webkit-transform: translate3d(-480px, 0, 0);
+    -o-transform: translate3d(-480px, 0, 0);
+    transform: translate3d(-480px, 0, 0);
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+    @include box-shadow(-7px,0, 7px,rgba(0,0,0,0.36),inset);
     .nav-wrap{
         max-width: 250px;
         margin:0 auto;
@@ -49,7 +57,11 @@
     a{
         font-size: 14px;
         color: #898484;
-        font-family: Georgia;        
+        font-family: Georgia; 
+        line-height: 20px;
+        &:hover{
+            text-decoration: underline;
+        }      
     }
     p{
         font-size: 14px;

@@ -1,25 +1,21 @@
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 0 20px;
     background-color: #d8d8d8;
+    .content{
+    	padding: 0;
+    	height: 36px;
+    }
 }
 #nav-toggle {
     background: #898484;
     border-radius: 3px;
     display: block;
-    position: relative;
-    padding: 10px 7px;
-    left: 24.7%;
+    margin-left: 10px;
+    padding: 10px 15px;
     float: left;
     color: #fff;
-    -webkit-transition: left 1s ease-in-out;
-    -moz-transition: left 1s ease-in-out;
-    -ms-transition: left 1s ease-in-out;
-    -o-transition: left 1s ease-in-out;
-    transition: left 1s ease-in-out;
+    &:hover{
+    	background-color: #78C47E;
+    }
 }
 .content {
     max-width: 940px;
@@ -76,6 +72,9 @@ section{
 	    	a{
     			color: #898484;
     			text-decoration: underline;
+    			&:hover{
+    				text-decoration: none;
+    			}
 	    	}
 		}
 	}
